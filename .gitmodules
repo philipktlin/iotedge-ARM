@@ -17,6 +17,7 @@
 [submodule "iotedge"]
 	path = iotedge
 	url = https://github.com/philipktlin/iotedge.git
+	branch = arm
 [submodule "iovec"]
 	path = iovec
 	url = https://github.com/philipktlin/iovec.git
