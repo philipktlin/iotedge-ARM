@@ -1,0 +1,47 @@
+[submodule "backtrace-rs"]
+	path = backtrace-rs
+	url = https://github.com/philipktlin/backtrace-rs.git
+	branch = arm
+[submodule "cmake-rs"]
+	path = cmake-rs
+	url = https://github.com/philipktlin/cmake-rs.git
+	branch = arm
+[submodule "dtoa"]
+	path = dtoa
+	url = https://github.com/philipktlin/dtoa.git
+	branch = arm
+[submodule "winapi-rs"]
+	path = winapi-rs
+	url = https://github.com/philipktlin/winapi-rs.git
+	branch = arm/v0.3.5
+[submodule "iotedge"]
+	path = iotedge
+	url = https://github.com/philipktlin/iotedge.git
+[submodule "iovec"]
+	path = iovec
+	url = https://github.com/philipktlin/iovec.git
+	branch = arm
+[submodule "mio"]
+	path = mio
+	url = https://github.com/philipktlin/mio.git
+	branch = arm
+[submodule "mio-uds-windows"]
+	path = mio-uds-windows
+	url = https://github.com/philipktlin/mio-uds-windows.git
+	branch = arm
+[submodule "miow"]
+	path = miow
+	url = https://github.com/philipktlin/miow.git
+	branch = arm
+[submodule "hjson-rust"]
+	path = hjson-rust
+	url = https://github.com/philipktlin/hjson-rust.git
+	branch = arm
+[submodule "tokio-uds-windows"]
+	path = tokio-uds-windows
+	url = https://github.com/philipktlin/tokio-uds-windows.git
+	branch = arm
+[submodule "hyperlocal-windows"]
+	path = hyperlocal-windows
+	url = https://github.com/philipktlin/hyperlocal-windows.git
+	branch = arm
