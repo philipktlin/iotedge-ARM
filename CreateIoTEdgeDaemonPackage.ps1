@@ -29,6 +29,16 @@ if ($hsmSysFolder.GetType().FullName -ne "System.IO.DirectoryInfo")
 	throw "Can't find hsm-sys folder"
 }
 
+$HsmFilePaths = @(
+	(Join-Path $hsmSysFolder.FullName "\out\build\Release\iothsm.dll"),
+	(Join-Path $hsmSysFolder.FullName "\out\build\Release\LIBEAY32.dll"))
+
+$HsmFilePaths | foreach {
+	if (!(Test-Path -Path $_ -PathType leaf)) {
+		throw "Can't find $_"
+	}
+}
+
 try
 {
 	$packageZipFilename = "iotedged-windows"
@@ -53,6 +63,10 @@ try
 				Copy-Item $_.FullName $destinationFolder -Recurse
 			}
 		}
+	}
+	
+	$HsmFilePaths | foreach {
+		Copy-Item $_ $outputFolder
 	}
 
 	Compress-Archive -Path $outputFolder -CompressionLevel Optimal -DestinationPath $packageZipFilename -Force
